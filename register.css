@@ -1,0 +1,64 @@
+/* Container for the form */
+.register__container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f7f7f7; /* Soft background color */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Form elements */
+.input__group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px; /* Adds space between input fields */
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px; /* Adds space between label and input */
+}
+
+input, select {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1); /* Slight inner shadow */
+    transition: border 0.3s;
+}
+
+/* On hover or focus, change border color */
+input:focus, select:focus {
+    border-color: #007BFF;
+}
+
+/* Button styling */
+button.btn {
+    width: 30%;
+    padding: 12px;
+    font-size: 18px;
+    color: white;
+    background-color: #0f0f10;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+    
+}
+
+/* Button hover effect */
+button.btn:hover {
+    background-color: #080808;
+}
+
+/* Align labels and inputs in two columns */
+.form-grid {
+    display: grid;
+    margin: 30px auto;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 15px;
+    align-items: center;
+}
